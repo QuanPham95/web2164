@@ -1,16 +1,18 @@
 {
-    "dependencies": {
-        "express": "^4.17.1"
-    },
-    "name": "node-w02",
+    "name": "node-w03",
     "version": "1.0.0",
-    "main": "02.03.01_index.js",
-    "devDependencies": {},
+    "description": "",
+    "main": "AppServer.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": ""
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "mongoose": "^5.13.0"
+    }
 }
