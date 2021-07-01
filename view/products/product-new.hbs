@@ -6,22 +6,21 @@
     {{>header  title=this.title}}
 
     <main>
+        <H1>{{title}}</H1>
         <div class="container">
-            <H1 height="150px">{{title}}</H1>
-            
             <form action="/product" method="POST">
                 <BR> ProductName:
-                <input type="text" class="form-control" name="ProductName" id="ProductName">
+                <input type="text" class="form-control" name="ProductName" id="ProductName" required>
                 <BR> ProductCode:
-                <input type="text" class="form-control" name="ProductCode" id="ProductCode">
+                <input type="text" class="form-control" name="ProductCode" id="ProductCode" required>
                 <BR> Information:
-                <textarea  type="text" class="form-control" name="Information" id="Information" rows="3"></textarea>
+                <textarea  type="text" class="form-control" name="Information" id="Information" rows="3" required></textarea>
                 <BR> Price:
-                <input type="number" class="form-control" name="Price" id="Price">
+                <input type="number" class="form-control" name="Price" id="Price" required>
                 <BR> Unit:
-                <input type="text" class="form-control" name="Unit" id="Unit">
+                <input type="text" class="form-control" name="Unit" id="Unit" required>
                 <BR> ImgLink:
-                <input type="text" class="form-control" name="ImgLink" id="ImgLink">
+                <input type="text" class="form-control" name="ImgLink" id="ImgLink" required>
                 <button type="submit">Create</button>
             </form>
         </div>        

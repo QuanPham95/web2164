@@ -6,7 +6,26 @@
     {{>header  title=this.title}}
 
     <main>
-        <H1>{{title}}</H1>
+        <div class="container">
+			<div class="jumbotron">
+			
+			  <img src="google-shoping.jpg"/>
+			  
+			  <h1 class="display-3">{{title}}</h1>
+			  <form action="" method="POST">
+				<div class="form-group">
+				  <label for="username">Email address</label>
+				  <input type="email" class="form-control" id="username" name="username" aria-describedby="emailHelp" required>
+				  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+				  <label for="password">Password</label>
+				  <input type="password" class="form-control" id="password" name="password" required>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			  </form>
+			</div>
+		</div>
         
     </main>
     

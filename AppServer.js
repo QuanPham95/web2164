@@ -7,6 +7,10 @@ const path = require("path");
 //const bodyParser = require("body-parser");
 var hbs = require('hbs');
 
+//--------- Connect DB (MongoDB, FireBase, ...)
+const mongoose = require("mongoose");
+const dbConnect = require("./libs/dbConnect");
+
 //--------- Server INITialization
 const app = express();
 
